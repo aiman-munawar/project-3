@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    width: 100vw;
+    height: 100vh;
+}
+body #main{
+    width: 100%;
+    height: 100%;
+}
+#main h1{
+    text-align: center;
+}
+#main #image{
+     display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2vw;
+}
+#image .pic{
+    width: 20vw;
+    height: 20vw;
+    
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    filter: grayscale(1);
+    transition: all;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+}
+.pic img:hover{
+    filter: grayscale(0);
+    scale: 1.05;
+    box-shadow: 5px 5px 20px rgb(120, 114, 114);
+    
+}
